@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="32d40593-5265-4f6b-8fdb-33dd8935e764" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,6 +13,13 @@
   <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -183,9 +193,9 @@
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state x="2198" y="387" key="cloudConfig.SelfSettingsDialog/0.36.1366.732/1366.0.1920.1080@1366.0.1920.1080" timestamp="1603364493911" />
-    <state x="1989" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1603377831980">
+    <state x="1989" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1603394149489">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state x="1989" y="239" width="672" height="678" key="search.everywhere.popup/0.36.1366.732/1366.0.1920.1080@1366.0.1920.1080" timestamp="1603377831980" />
+    <state x="1989" y="239" width="672" height="678" key="search.everywhere.popup/0.36.1366.732/1366.0.1920.1080@1366.0.1920.1080" timestamp="1603394149489" />
   </component>
 </project>
