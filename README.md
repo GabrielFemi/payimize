@@ -1,2 +1,1 @@
-# payimize
-Payment solution for schools.
+#Payimize
