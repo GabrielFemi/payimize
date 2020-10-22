@@ -155,6 +155,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -222,6 +223,10 @@
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state x="2087" y="243" key="NewPhpClassDialog/0.36.1366.732/1366.0.1920.1080@1366.0.1920.1080" timestamp="1603394331254" />
+    <state x="1850" y="171" key="SettingsEditor" timestamp="1603397040722">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1850" y="171" key="SettingsEditor/0.36.1366.732/1366.0.1920.1080@1366.0.1920.1080" timestamp="1603397040722" />
     <state x="2198" y="387" key="cloudConfig.SelfSettingsDialog" timestamp="1603364493911">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>

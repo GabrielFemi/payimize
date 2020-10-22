@@ -20,7 +20,7 @@ name: "Create",
     components: {Alert},
     data() {
         return {
-            message: "Pay your accomodation fee with ease."
+            message: "Pay your accommodation fee with ease."
         }
     }
 }

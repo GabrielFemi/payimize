@@ -4272,7 +4272,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
-      message: "Pay your accomodation fee with ease."
+      message: "Pay your accommodation fee with ease."
     };
   }
 });
