@@ -22,4 +22,8 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia\Inertia::render('Dashboard');
 })->name('dashboard');
 
+Route::middleware(['auth:sanctum'])->get('/transactions/school-fees-and-accommodation', function () {
+    return inertia()->render('Transaction/SchoolFees/Index');
+});
+
 Route::middleware(['auth:sanctum'])->resource('/transactions', TransactionController::class);
