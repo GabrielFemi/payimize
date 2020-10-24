@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Institution;
 use Illuminate\Http\Request;
+use Inertia\Inertia;
 
 class InstitutionController extends Controller
 {
@@ -20,11 +21,11 @@ class InstitutionController extends Controller
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Inertia\Response
      */
     public function create()
     {
-        //
+        return Inertia::render('Institution/Create');
     }
 
     /**

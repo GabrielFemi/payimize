@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\InstitutionController;
 use App\Http\Controllers\TransactionController;
 use Illuminate\Support\Facades\Route;
 
@@ -32,6 +33,4 @@ Route::middleware(['guest'])->get('register-as-institution', function () {
     return Inertia\Inertia::render('Register-As-Institution');
 });
 
-Route::get('/institution/create', function () {
-    return \Inertia\Inertia::render('Institution/Create');
-});
+Route::resource('/institutions', InstitutionController::class);
