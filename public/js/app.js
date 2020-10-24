@@ -27464,7 +27464,7 @@ var render = function() {
           },
           [
             _vm._v(
-              "\n            Hellonext is a feature voting software where you can allow your users to vote on features, publish roadmap, and complete your customer feedback loop.\n        "
+              "\n                Payimize is a feature payment software where you can pay for your school fees, accomodation and also other accrued fees. You can easily montior your past and current transactions.\n            "
             )
           ]
         ),
@@ -27478,7 +27478,9 @@ var render = function() {
               attrs: { href: "#" }
             },
             [
-              _vm._v("\n                Get Started\n                "),
+              _vm._v(
+                "\n                    Create a free student profile\n                    "
+              ),
               _c(
                 "svg",
                 {
@@ -27511,7 +27513,9 @@ var render = function() {
               attrs: { href: "#" }
             },
             [
-              _vm._v("\n                Book a Demo\n                "),
+              _vm._v(
+                "\n                    Register your institution\n                    "
+              ),
               _c(
                 "svg",
                 {
@@ -27537,9 +27541,7 @@ var render = function() {
           )
         ])
       ]
-    ),
-    _vm._v(" "),
-    _vm._m(1)
+    )
   ])
 }
 var staticRenderFns = [
@@ -27554,34 +27556,16 @@ var staticRenderFns = [
           "text-4xl md:text-6xl text-gray-900 leading-none mb-6 font-extrabold tracking-normal md:tracking-tight"
       },
       [
-        _vm._v("\n            All your "),
+        _vm._v("\n                All your "),
         _c(
           "span",
           {
             staticClass:
               "bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-purple-600 w-full block lg:inline"
           },
-          [_vm._v("customer feedback")]
+          [_vm._v("academic payments")]
         ),
-        _vm._v(" in one single place.\n        ")
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "w-full md:w-10/12 mx-auto text-center mt-20" },
-      [
-        _c("img", {
-          staticClass: "w-full shadow-2xl rounded-lg",
-          attrs: {
-            src: "/hero.jpg",
-            alt: "Hellonext feedback boards software screenshot"
-          }
-        })
+        _vm._v(" in a single place.\n            ")
       ]
     )
   }

@@ -2,14 +2,14 @@
     <section class="container mx-auto py-24 px-4">
         <div class="w-full md:w-11/12 xl:w-9/12 mx-auto text-left md:text-center">
             <h1 class="text-4xl md:text-6xl text-gray-900 leading-none mb-6 font-extrabold tracking-normal md:tracking-tight">
-                All your <span class="bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-purple-600 w-full block lg:inline">customer feedback</span> in one single place.
+                All your <span class="bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-purple-600 w-full block lg:inline">academic payments</span> in a single place.
             </h1>
             <p class="text-lg md:text-xl text-gray-600 mb-6 px-0 lg:px-24">
-                Hellonext is a feature voting software where you can allow your users to vote on features, publish roadmap, and complete your customer feedback loop.
+                Payimize is a feature payment software where you can pay for your school fees, accomodation and also other accrued fees. You can easily montior your past and current transactions.
             </p>
             <div class="space-x-0 md:space-x-2 mb-4 md:mb-8">
                 <a class="btn btn-primary btn-lg inline-flex justify-center items-center w-full sm:w-auto mb-2 sm:mb-0" href="#">
-                    Get Started
+                    Create a free student profile
                     <svg class="ml-1 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                         <path
                             fill-rule="evenodd"
@@ -19,7 +19,7 @@
                     </svg>
                 </a>
                 <a class="btn btn-light btn-lg inline-flex justify-center items-center w-full sm:w-auto mb-2 sm:mb-0" href="#">
-                    Book a Demo
+                    Register your institution
                     <svg class="ml-1 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                         <path
                             fill-rule="evenodd"
@@ -30,11 +30,11 @@
                 </a>
             </div>
         </div>
-        <div class="w-full md:w-10/12 mx-auto text-center mt-20">
-            <img src="/hero.jpg" alt="Hellonext feedback boards software screenshot" class="w-full shadow-2xl rounded-lg" />
-        </div>
+<!--        <div class="w-full md:w-10/12 mx-auto text-center mt-20">-->
+<!--            <img src="/hero.jpg" alt="Hellonext feedback boards software screenshot" class="w-full shadow-2xl rounded-lg" />-->
+<!--        </div>-->
     </section>
-
+    
 </template>
 
 <script>
