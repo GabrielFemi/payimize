@@ -27024,7 +27024,7 @@ var render = function() {
                 attrs: {
                   id: "inline-full-name",
                   type: "text",
-                  value: "Jane Doe"
+                  placeholder: "ABC institution"
                 },
                 domProps: { value: _vm.form.name },
                 on: {
@@ -27056,7 +27056,7 @@ var render = function() {
                   "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500",
                 attrs: {
                   id: "inline-password",
-                  type: "password",
+                  type: "email",
                   placeholder: "payments@aul.edu.ng"
                 },
                 domProps: { value: _vm.form.email },
