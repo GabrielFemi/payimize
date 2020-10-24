@@ -27347,14 +27347,9 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [
+  return _c(
+    "div",
+    [
       _c(
         "div",
         {
@@ -27365,16 +27360,18 @@ var staticRenderFns = [
       ),
       _vm._v(" "),
       _c(
-        "a",
+        "inertia-link",
         {
           staticClass: "p-2 rounded bg-blue-400",
-          attrs: { href: "javascript:history.back()" }
+          attrs: { href: _vm.route("dashboard") }
         },
-        [_vm._v("<- Go back")]
+        [_vm._v("<- Dashboard")]
       )
-    ])
-  }
-]
+    ],
+    1
+  )
+}
+var staticRenderFns = []
 render._withStripped = true
 
 
