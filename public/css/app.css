@@ -3392,12 +3392,12 @@ a.list-item:focus {
 }
 
 .prose {
-  color: #374151;
+  color: #4a5568;
   max-width: 65ch;
 }
 
 .prose [class~="lead"] {
-  color: #4b5563;
+  color: #4a5568;
   font-size: 1.25em;
   line-height: 1.6;
   margin-top: 1.2em;
@@ -3405,13 +3405,12 @@ a.list-item:focus {
 }
 
 .prose a {
-  color: #5850ec;
-  text-decoration: none;
-  font-weight: 600;
+  color: #1a202c;
+  text-decoration: underline;
 }
 
 .prose strong {
-  color: #161e2e;
+  color: #1a202c;
   font-weight: 600;
 }
 
@@ -3431,7 +3430,7 @@ a.list-item:focus {
   content: counter(list-counter) ".";
   position: absolute;
   font-weight: 400;
-  color: #6b7280;
+  color: #718096;
 }
 
 .prose ul > li {
@@ -3442,7 +3441,7 @@ a.list-item:focus {
 .prose ul > li::before {
   content: "";
   position: absolute;
-  background-color: #d2d6dc;
+  background-color: #cbd5e0;
   border-radius: 50%;
   width: 0.375em;
   height: 0.375em;
@@ -3451,7 +3450,7 @@ a.list-item:focus {
 }
 
 .prose hr {
-  border-color: #e5e7eb;
+  border-color: #e2e8f0;
   border-top-width: 1px;
   margin-top: 3em;
   margin-bottom: 3em;
@@ -3460,9 +3459,9 @@ a.list-item:focus {
 .prose blockquote {
   font-weight: 500;
   font-style: italic;
-  color: #161e2e;
+  color: #1a202c;
   border-left-width: 0.25rem;
-  border-left-color: #e5e7eb;
+  border-left-color: #e2e8f0;
   quotes: "\201C""\201D""\2018""\2019";
   margin-top: 1.6em;
   margin-bottom: 1.6em;
@@ -3513,14 +3512,14 @@ a.list-item:focus {
 }
 
 .prose figure figcaption {
-  color: #6b7280;
+  color: #718096;
   font-size: 0.875em;
   line-height: 1.4285714;
   margin-top: 0.8571429em;
 }
 
 .prose code {
-  color: #161e2e;
+  color: #1a202c;
   font-weight: 600;
   font-size: 0.875em;
 }
@@ -3534,8 +3533,8 @@ a.list-item:focus {
 }
 
 .prose pre {
-  color: #e5e7eb;
-  background-color: #252f3f;
+  color: #e2e8f0;
+  background-color: #2d3748;
   overflow-x: auto;
   font-size: 0.875em;
   line-height: 1.7142857;
@@ -3579,10 +3578,10 @@ a.list-item:focus {
 }
 
 .prose thead {
-  color: #161e2e;
+  color: #1a202c;
   font-weight: 600;
   border-bottom-width: 1px;
-  border-bottom-color: #d2d6dc;
+  border-bottom-color: #cbd5e0;
 }
 
 .prose thead th {
@@ -3594,7 +3593,7 @@ a.list-item:focus {
 
 .prose tbody tr {
   border-bottom-width: 1px;
-  border-bottom-color: #e5e7eb;
+  border-bottom-color: #e2e8f0;
 }
 
 .prose tbody tr:last-child {
@@ -3725,10 +3724,6 @@ a.list-item:focus {
 
 .prose > :last-child {
   margin-bottom: 0;
-}
-
-.prose h1, .prose h2, .prose h3, .prose h4 {
-  color: #161e2e;
 }
 
 .prose-sm {
