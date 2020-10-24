@@ -28155,7 +28155,7 @@ var render = function() {
         {
           staticClass:
             "btn btn-primary btn-lg inline-flex justify-center items-center w-full sm:w-auto mb-2 sm:mb-0",
-          attrs: { href: "/register" }
+          attrs: { href: "/" }
         },
         [
           _c(
