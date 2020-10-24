@@ -4295,6 +4295,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Index"
 });
@@ -27345,37 +27347,34 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c(
-      "div",
-      {
-        staticClass: "alert bg-green-200 text-green-800",
-        attrs: { role: "alert" }
-      },
-      [
-        _c(
-          "svg",
-          {
-            attrs: {
-              xmlns: "http://www.w3.org/2000/svg",
-              width: "24",
-              height: "24",
-              viewBox: "0 0 24 24",
-              fill: "none",
-              stroke: "currentColor",
-              "stroke-width": "2",
-              "stroke-linecap": "round",
-              "stroke-linejoin": "round"
-            }
-          },
-          [_c("polyline", { attrs: { points: "20 6 9 17 4 12" } })]
-        ),
-        _vm._v(" You have paid sufficient fees for the session.")
-      ]
-    )
-  ])
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c(
+        "div",
+        {
+          staticClass: "alert bg-green-700 text-white mb-6",
+          attrs: { role: "alert" }
+        },
+        [_vm._v("All caught up!")]
+      ),
+      _vm._v(" "),
+      _c(
+        "a",
+        {
+          staticClass: "p-2 rounded bg-blue-400",
+          attrs: { href: "javascript:history.back()" }
+        },
+        [_vm._v("<- Go back")]
+      )
+    ])
+  }
+]
 render._withStripped = true
 
 
