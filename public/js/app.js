@@ -4254,8 +4254,31 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: "Register-As-Institution"
+  name: "Register-As-Institution",
+  data: function data() {
+    return {
+      message: "Official Email address should be used, please."
+    };
+  }
 });
 
 /***/ }),
@@ -27448,10 +27471,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Register-As-Institution.vue?vue&type=template&id=aa8b0024&scoped=true&":
-/*!*********************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Register-As-Institution.vue?vue&type=template&id=aa8b0024&scoped=true& ***!
-  \*********************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Register-As-Institution.vue?vue&type=template&id=aa8b0024&":
+/*!*********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Register-As-Institution.vue?vue&type=template&id=aa8b0024& ***!
+  \*********************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -27470,24 +27493,120 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "h1",
-      {
-        staticClass:
-          "text-center text-4xl md:text-6xl text-gray-900 leading-none mb-6 font-extrabold tracking-normal md:tracking-tight"
-      },
-      [
-        _vm._v("\n    Register as "),
-        _c(
-          "span",
-          {
-            staticClass:
-              "bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-purple-600 w-full block lg:inline"
-          },
-          [_vm._v("an Institution.")]
-        )
-      ]
-    )
+    return _c("div", [
+      _c(
+        "h1",
+        {
+          staticClass:
+            "text-center text-4xl md:text-6xl text-gray-900 leading-none mb-6 font-extrabold tracking-normal md:tracking-tight"
+        },
+        [
+          _vm._v("\n        How to register as "),
+          _c(
+            "span",
+            {
+              staticClass:
+                "bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-purple-600 w-full block lg:inline"
+            },
+            [_vm._v("an Institution.")]
+          )
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass:
+            "font-sans flex items-center justify-center bg-blue-darker w-full py-8"
+        },
+        [
+          _c(
+            "div",
+            {
+              staticClass:
+                "overflow-hidden bg-white rounded max-w-xs w-full shadow-lg  leading-normal"
+            },
+            [
+              _c(
+                "a",
+                {
+                  staticClass: "block group hover:bg-blue p-4 border-b",
+                  attrs: { href: "#" }
+                },
+                [
+                  _c(
+                    "p",
+                    {
+                      staticClass:
+                        "font-bold text-lg mb-1 text-black group-hover:text-white"
+                    },
+                    [_vm._v("1. Send us a mail. ✉✉")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "p",
+                    {
+                      staticClass:
+                        "text-grey-darker mb-2 group-hover:text-white"
+                    },
+                    [
+                      _vm._v("Send an email indicating your interest to "),
+                      _c("code", { staticClass: "text-red-600" }, [
+                        _vm._v("register@payimize.io")
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "a",
+                    {
+                      staticClass: "badge bg-red-700 hover:bg-red-900",
+                      attrs: { href: "#" }
+                    },
+                    [
+                      _c("span", { staticClass: "text-white" }, [
+                        _vm._v("Using Institution's official email address")
+                      ])
+                    ]
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass: "block group hover:bg-blue p-4",
+                  attrs: { href: "#" }
+                },
+                [
+                  _c(
+                    "p",
+                    {
+                      staticClass:
+                        "font-bold text-lg mb-1 text-black group-hover:text-white"
+                    },
+                    [_vm._v("2. What Next? 😏😏")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "p",
+                    {
+                      staticClass:
+                        "text-grey-darker mb-2 group-hover:text-white"
+                    },
+                    [
+                      _vm._v(
+                        "You'll be sent an email with sensitive credentials to indicate your account has been created."
+                      )
+                    ]
+                  )
+                ]
+              )
+            ]
+          )
+        ]
+      )
+    ])
   }
 ]
 render._withStripped = true
@@ -42452,7 +42571,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Register_As_Institution_vue_vue_type_template_id_aa8b0024_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Register-As-Institution.vue?vue&type=template&id=aa8b0024&scoped=true& */ "./resources/js/Pages/Register-As-Institution.vue?vue&type=template&id=aa8b0024&scoped=true&");
+/* harmony import */ var _Register_As_Institution_vue_vue_type_template_id_aa8b0024___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Register-As-Institution.vue?vue&type=template&id=aa8b0024& */ "./resources/js/Pages/Register-As-Institution.vue?vue&type=template&id=aa8b0024&");
 /* harmony import */ var _Register_As_Institution_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Register-As-Institution.vue?vue&type=script&lang=js& */ "./resources/js/Pages/Register-As-Institution.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
@@ -42464,11 +42583,11 @@ __webpack_require__.r(__webpack_exports__);
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   _Register_As_Institution_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Register_As_Institution_vue_vue_type_template_id_aa8b0024_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Register_As_Institution_vue_vue_type_template_id_aa8b0024_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Register_As_Institution_vue_vue_type_template_id_aa8b0024___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Register_As_Institution_vue_vue_type_template_id_aa8b0024___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
-  "aa8b0024",
+  null,
   null
   
 )
@@ -42494,19 +42613,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Register-As-Institution.vue?vue&type=template&id=aa8b0024&scoped=true&":
-/*!***************************************************************************************************!*\
-  !*** ./resources/js/Pages/Register-As-Institution.vue?vue&type=template&id=aa8b0024&scoped=true& ***!
-  \***************************************************************************************************/
+/***/ "./resources/js/Pages/Register-As-Institution.vue?vue&type=template&id=aa8b0024&":
+/*!***************************************************************************************!*\
+  !*** ./resources/js/Pages/Register-As-Institution.vue?vue&type=template&id=aa8b0024& ***!
+  \***************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Register_As_Institution_vue_vue_type_template_id_aa8b0024_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Register-As-Institution.vue?vue&type=template&id=aa8b0024&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Register-As-Institution.vue?vue&type=template&id=aa8b0024&scoped=true&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Register_As_Institution_vue_vue_type_template_id_aa8b0024_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Register_As_Institution_vue_vue_type_template_id_aa8b0024___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Register-As-Institution.vue?vue&type=template&id=aa8b0024& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Register-As-Institution.vue?vue&type=template&id=aa8b0024&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Register_As_Institution_vue_vue_type_template_id_aa8b0024___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Register_As_Institution_vue_vue_type_template_id_aa8b0024_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Register_As_Institution_vue_vue_type_template_id_aa8b0024___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
