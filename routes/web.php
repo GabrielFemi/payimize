@@ -27,3 +27,7 @@ Route::middleware(['auth:sanctum'])->get('/transactions/school-fees-and-accommod
 });
 
 Route::middleware(['auth:sanctum'])->resource('/transactions', TransactionController::class);
+
+Route::middleware(['guest'])->get('register-as-institution', function () {
+    return Inertia\Inertia::render('Register-As-Institution');
+});
