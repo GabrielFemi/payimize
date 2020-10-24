@@ -26,7 +26,7 @@
                         Make payments in a secure, beautiful and intuitive interface.
                     </div>
 
-                    <a href="/transactions/create">
+                    <inertia-link href="/transactions/create">
                         <div class="mt-3 flex items-center text-sm font-semibold text-indigo-700">
                                 <div>Continue</div>
 
@@ -34,7 +34,7 @@
                                     <svg viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                                 </div>
                         </div>
-                    </a>
+                    </inertia-link>
                 </div>
             </div>
 
@@ -49,7 +49,7 @@
                         Check out all your previous transactions in an exquisite way.
                     </div>
 
-                    <a href="/transactions">
+                    <inertia-link href="/transactions">
                         <div class="mt-3 flex items-center text-sm font-semibold text-indigo-700">
                                 <div>View your past transactions.</div>
 
@@ -57,7 +57,7 @@
                                     <svg viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                                 </div>
                         </div>
-                    </a>
+                    </inertia-link>
                 </div>
             </div>
         </div>
