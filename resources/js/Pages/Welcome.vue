@@ -9,7 +9,7 @@
                     Payimize is a feature payment software where you can pay for your school fees, accommodation and also other accrued fees. You can easily montior your past and current transactions.
                 </p>
                 <div class="space-x-0 md:space-x-2 mb-4 md:mb-8">
-                    <inertia-link class="btn btn-primary btn-lg inline-flex justify-center items-center w-full sm:w-auto mb-2 sm:mb-0" href="/register">
+                    <a class="btn btn-primary btn-lg inline-flex justify-center items-center w-full sm:w-auto mb-2 sm:mb-0" href="/register">
                         Create a free student profile
                         <svg class="ml-1 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                             <path
@@ -18,7 +18,7 @@
                                 clip-rule="evenodd"
                             />
                         </svg>
-                    </inertia-link>
+                    </a>
                     <a class="btn btn-light btn-lg inline-flex justify-center items-center w-full sm:w-auto mb-2 sm:mb-0" href="#">
                         Register your institution
                         <svg class="ml-1 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
