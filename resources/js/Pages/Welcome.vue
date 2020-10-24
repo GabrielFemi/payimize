@@ -6,7 +6,7 @@
                     All your <span class="bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-purple-600 w-full block lg:inline">academic payments</span> in a single place.
                 </h1>
                 <p class="text-lg md:text-xl text-gray-600 mb-6 px-0 lg:px-24">
-                    Payimize is a feature payment software where you can pay for your school fees, accomodation and also other accrued fees. You can easily montior your past and current transactions.
+                    Payimize is a feature payment software where you can pay for your school fees, accommodation and also other accrued fees. You can easily montior your past and current transactions.
                 </p>
                 <div class="space-x-0 md:space-x-2 mb-4 md:mb-8">
                     <inertia-link class="btn btn-primary btn-lg inline-flex justify-center items-center w-full sm:w-auto mb-2 sm:mb-0" href="/register">

@@ -27561,7 +27561,7 @@ var render = function() {
               },
               [
                 _vm._v(
-                  "\n                Payimize is a feature payment software where you can pay for your school fees, accomodation and also other accrued fees. You can easily montior your past and current transactions.\n            "
+                  "\n                Payimize is a feature payment software where you can pay for your school fees, accommodation and also other accrued fees. You can easily montior your past and current transactions.\n            "
                 )
               ]
             ),
