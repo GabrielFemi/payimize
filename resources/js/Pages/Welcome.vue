@@ -19,7 +19,7 @@
                             />
                         </svg>
                     </a>
-                    <a class="btn btn-light btn-lg inline-flex justify-center items-center w-full sm:w-auto mb-2 sm:mb-0" href="#">
+                    <a class="btn btn-light btn-lg inline-flex justify-center items-center w-full sm:w-auto mb-2 sm:mb-0" href="/register-as-institution">
                         Register your institution
                         <svg class="ml-1 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                             <path
