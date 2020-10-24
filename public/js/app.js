@@ -3518,7 +3518,20 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: "Create"
+  name: "Create",
+  data: function data() {
+    return {
+      form: {
+        name: null,
+        email: null
+      }
+    };
+  },
+  methods: {
+    submit: function submit() {
+      this.$inertia.post(route('institutions.store'), this.form);
+    }
+  }
 });
 
 /***/ }),
@@ -26975,7 +26988,97 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c(
+    "div",
+    { staticClass: "flex justify-center w-full py-8 items-center" },
+    [
+      _vm._m(0),
+      _vm._v(" "),
+      _c(
+        "form",
+        {
+          staticClass: "w-full max-w-sm",
+          on: {
+            submit: function($event) {
+              $event.preventDefault()
+              return _vm.submit($event)
+            }
+          }
+        },
+        [
+          _c("div", { staticClass: "md:flex md:items-center mb-6" }, [
+            _vm._m(1),
+            _vm._v(" "),
+            _c("div", { staticClass: "md:w-2/3" }, [
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.form.name,
+                    expression: "form.name"
+                  }
+                ],
+                staticClass:
+                  "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500",
+                attrs: {
+                  id: "inline-full-name",
+                  type: "text",
+                  value: "Jane Doe"
+                },
+                domProps: { value: _vm.form.name },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.$set(_vm.form, "name", $event.target.value)
+                  }
+                }
+              })
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "md:flex md:items-center mb-6" }, [
+            _vm._m(2),
+            _vm._v(" "),
+            _c("div", { staticClass: "md:w-2/3" }, [
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.form.email,
+                    expression: "form.email"
+                  }
+                ],
+                staticClass:
+                  "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500",
+                attrs: {
+                  id: "inline-password",
+                  type: "password",
+                  placeholder: "payments@aul.edu.ng"
+                },
+                domProps: { value: _vm.form.email },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.$set(_vm.form, "email", $event.target.value)
+                  }
+                }
+              })
+            ])
+          ]),
+          _vm._v(" "),
+          _vm._m(3),
+          _vm._v(" "),
+          _vm._m(4)
+        ]
+      )
+    ]
+  )
 }
 var staticRenderFns = [
   function() {
@@ -26983,115 +27086,95 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c(
-      "div",
-      { staticClass: "flex justify-center w-full py-8 items-center" },
+      "a",
+      {
+        staticClass: "badge bg-green-500 hover:bg-green-700",
+        attrs: { href: "#" }
+      },
       [
-        _c(
-          "a",
-          {
-            staticClass: "badge bg-green-500 hover:bg-green-700",
-            attrs: { href: "#" }
-          },
-          [
-            _c("span", { staticClass: "text-white" }, [
-              _vm._v("\n                Secure process.\n            ")
-            ])
-          ]
-        ),
-        _vm._v(" "),
-        _c("form", { staticClass: "w-full max-w-sm" }, [
-          _c("div", { staticClass: "md:flex md:items-center mb-6" }, [
-            _c("div", { staticClass: "md:w-1/3" }, [
-              _c(
-                "label",
-                {
-                  staticClass:
-                    "block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4",
-                  attrs: { for: "inline-full-name" }
-                },
-                [
-                  _vm._v(
-                    "\n                        Name of institution\n                    "
-                  )
-                ]
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "md:w-2/3" }, [
-              _c("input", {
-                staticClass:
-                  "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500",
-                attrs: {
-                  id: "inline-full-name",
-                  type: "text",
-                  value: "Jane Doe"
-                }
-              })
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "md:flex md:items-center mb-6" }, [
-            _c("div", { staticClass: "md:w-1/3" }, [
-              _c(
-                "label",
-                {
-                  staticClass:
-                    "block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4",
-                  attrs: { for: "inline-password" }
-                },
-                [
-                  _vm._v(
-                    "\n                        Official Email\n                    "
-                  )
-                ]
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "md:w-2/3" }, [
-              _c("input", {
-                staticClass:
-                  "bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500",
-                attrs: {
-                  id: "inline-password",
-                  type: "password",
-                  placeholder: "payments@aul.edu.ng"
-                }
-              })
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "w-full md:flex md:items-center" }, [
-            _c("div", { staticClass: "md:w-2/3 mb-6 text-right" }, [
-              _c("div", { staticClass: "block text-gray-500" }, [
-                _c("code", { staticClass: "text-gray-800" }, [
-                  _vm._v("Access code will be generated automatically.")
-                ])
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "md:flex md:items-center" }, [
-            _c("div", { staticClass: "md:w-1/3" }),
-            _vm._v(" "),
-            _c("div", { staticClass: "md:w-2/3" }, [
-              _c(
-                "button",
-                {
-                  staticClass:
-                    "shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded",
-                  attrs: { type: "button" }
-                },
-                [
-                  _vm._v(
-                    "\n                        Create account\n                    "
-                  )
-                ]
-              )
-            ])
-          ])
+        _c("span", { staticClass: "text-white" }, [
+          _vm._v("\n                Secure process.\n            ")
         ])
       ]
     )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "md:w-1/3" }, [
+      _c(
+        "label",
+        {
+          staticClass:
+            "block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4",
+          attrs: { for: "inline-full-name" }
+        },
+        [
+          _vm._v(
+            "\n                        Name of institution\n                    "
+          )
+        ]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "md:w-1/3" }, [
+      _c(
+        "label",
+        {
+          staticClass:
+            "block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4",
+          attrs: { for: "inline-password" }
+        },
+        [
+          _vm._v(
+            "\n                        Official Email\n                    "
+          )
+        ]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "w-full md:flex md:items-center" }, [
+      _c("div", { staticClass: "md:w-2/3 mb-6 text-right" }, [
+        _c("div", { staticClass: "block text-gray-500" }, [
+          _c("code", { staticClass: "text-gray-800" }, [
+            _vm._v("Access code will be generated automatically.")
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "md:flex md:items-center" }, [
+      _c("div", { staticClass: "md:w-1/3" }),
+      _vm._v(" "),
+      _c("div", { staticClass: "md:w-2/3" }, [
+        _c(
+          "button",
+          {
+            staticClass:
+              "shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded",
+            attrs: { type: "submit" }
+          },
+          [
+            _vm._v(
+              "\n                        Create account\n                    "
+            )
+          ]
+        )
+      ])
+    ])
   }
 ]
 render._withStripped = true
