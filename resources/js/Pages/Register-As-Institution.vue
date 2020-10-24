@@ -32,12 +32,15 @@
                 Go home
             </a>
         </div>
+        <Footer />
     </div>
 </template>
 
 <script>
+import Footer from "@/components/Footer";
 export default {
 name: "Register-As-Institution",
+    components: {Footer},
     data() {
     return {
         message: "Official Email address should be used, please."
