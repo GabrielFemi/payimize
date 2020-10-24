@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::middleware('guest')->get('/', function () {
    return \Inertia\Inertia::render('Welcome');
 });
 
