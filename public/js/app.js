@@ -3510,6 +3510,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Create"
 });
@@ -27050,6 +27057,16 @@ var staticRenderFns = [
                   placeholder: "payments@aul.edu.ng"
                 }
               })
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "w-full md:flex md:items-center" }, [
+            _c("div", { staticClass: "md:w-2/3 mb-6 text-right" }, [
+              _c("div", { staticClass: "block text-gray-500" }, [
+                _c("code", { staticClass: "text-gray-800" }, [
+                  _vm._v("Access code will be generated automatically.")
+                ])
+              ])
             ])
           ]),
           _vm._v(" "),

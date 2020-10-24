@@ -35,6 +35,13 @@
 <!--      </span>-->
 <!--                </label>-->
 <!--            </div>-->
+            <div class="w-full md:flex md:items-center">
+                <div class="md:w-2/3 mb-6 text-right">
+                    <div class="block text-gray-500">
+                        <code class="text-gray-800">Access code will be generated automatically.</code>
+                    </div>
+                </div>
+            </div>
             <div class="md:flex md:items-center">
                 <div class="md:w-1/3"></div>
                 <div class="md:w-2/3">
