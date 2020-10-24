@@ -28154,7 +28154,7 @@ var render = function() {
         "a",
         {
           staticClass:
-            "btn btn-primary btn-lg inline-flex justify-center items-center w-full sm:w-auto mb-2 sm:mb-0",
+            "btn btn-dark btn-lg inline-flex justify-center items-center w-full sm:w-auto mb-2 sm:mb-0",
           attrs: { href: "/" }
         },
         [

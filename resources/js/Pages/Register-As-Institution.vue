@@ -20,7 +20,7 @@
             </div>
         </div>
         <div class="flex items-center justify-center">
-            <a class="btn btn-primary btn-lg inline-flex justify-center items-center w-full sm:w-auto mb-2 sm:mb-0" href="/">
+            <a class="btn btn-dark btn-lg inline-flex justify-center items-center w-full sm:w-auto mb-2 sm:mb-0" href="/">
                 <svg class="mr-1 svg-icon" viewBox="0 0 20 20">
                     <path fill="none" d="M18.271,9.212H3.615l4.184-4.184c0.306-0.306,0.306-0.801,0-1.107c-0.306-0.306-0.801-0.306-1.107,0
                         L1.21,9.403C1.194,9.417,1.174,9.421,1.158,9.437c-0.181,0.181-0.242,0.425-0.209,0.66c0.005,0.038,0.012,0.071,0.022,0.109
