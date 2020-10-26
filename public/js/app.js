@@ -29290,7 +29290,10 @@ var render = function() {
           _c("div", { staticClass: "flex items-center space-x-1" }, [
             _c(
               "a",
-              { staticClass: "btn btn-sm btn-primary", attrs: { href: "#" } },
+              {
+                staticClass: "btn btn-sm btn-primary",
+                attrs: { href: _vm.route("login") }
+              },
               [_vm._v("Login")]
             ),
             _vm._v(" "),
