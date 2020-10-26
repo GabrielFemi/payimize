@@ -1,5 +1,6 @@
 <template>
     <div>
+        <Navbar/>
         <section class="container mx-auto py-24 px-4">
             <div class="w-full md:w-11/12 xl:w-9/12 mx-auto text-left md:text-center">
                 <h1 class="text-4xl md:text-6xl text-gray-900 leading-none mb-6 font-extrabold tracking-normal md:tracking-tight">
@@ -41,12 +42,11 @@
 
 <script>
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
+
 export default {
 name: "Welcome.vue",
-    components: {Footer}
+    components: {Navbar, Footer}
 }
 </script>
 
-<style scoped>
-
-</style>
