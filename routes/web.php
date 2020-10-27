@@ -17,11 +17,11 @@ use Inertia\Inertia;
 */
 
 Route::middleware('guest')->get('/', function () {
-   return \Inertia\Inertia::render('Welcome');
+   return Inertia::render('Welcome');
 });
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return Inertia\Inertia::render('Dashboard');
+    return Inertia::render('Dashboard');
 })->name('dashboard');
 
 Route::middleware(['auth:sanctum'])->get('/transactions/school-fees-and-accommodation', function () {
@@ -31,7 +31,7 @@ Route::middleware(['auth:sanctum'])->get('/transactions/school-fees-and-accommod
 Route::middleware(['auth:sanctum'])->resource('/transactions', TransactionController::class);
 
 Route::middleware(['guest'])->get('register-as-institution', function () {
-    return Inertia\Inertia::render('Register-As-Institution');
+    return Inertia::render('Register-As-Institution');
 });
 
 Route::resource('/institutions', InstitutionController::class);
