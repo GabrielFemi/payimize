@@ -178,6 +178,7 @@ return [
         App\Providers\JetstreamServiceProvider::class,
 
         \Tightenco\Ziggy\ZiggyServiceProvider::class,
+        Spatie\Permission\PermissionServiceProvider::class
 
     ],
 
