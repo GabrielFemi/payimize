@@ -2,12 +2,28 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StoreInstitutionRequest;
 use App\Models\Institution;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 use Inertia\Inertia;
 
 class InstitutionController extends Controller
 {
+    /**
+     * @var Institution
+     */
+    private $institution;
+
+    /**
+     * InstitutionController constructor.
+     * @param Institution $institution
+     */
+    public function __construct(Institution $institution)
+    {
+        $this->institution = $institution;
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -34,9 +50,10 @@ class InstitutionController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreInstitutionRequest $request)
     {
-        //
+        $this->institution->create(array_merge(['access_code' => Str::random(15)], $request->validated()));
+        return response('Saved!');
     }
 
     /**
