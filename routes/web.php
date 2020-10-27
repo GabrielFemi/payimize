@@ -20,7 +20,7 @@ Route::middleware('guest')->get('/', function () {
    return Inertia::render('Welcome');
 });
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+Route::middleware(['auth:sanctum', 'verified', 'onboarded'])->get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->name('dashboard');
 
@@ -38,4 +38,4 @@ Route::resource('/institutions', InstitutionController::class);
 
 Route::get('onboarding', function () {
     return Inertia::render('Onboarding');
-});
+})->name('onboarding');
