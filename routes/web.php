@@ -3,6 +3,7 @@
 use App\Http\Controllers\InstitutionController;
 use App\Http\Controllers\TransactionController;
 use Illuminate\Support\Facades\Route;
+use Inertia\Inertia;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,3 +35,7 @@ Route::middleware(['guest'])->get('register-as-institution', function () {
 });
 
 Route::resource('/institutions', InstitutionController::class);
+
+Route::get('onboarding', function () {
+    return Inertia::render('Onboarding');
+});
