@@ -32,8 +32,8 @@ class CreateRoles extends Command
      */
     public function handle()
     {
-        $role = \Spatie\Permission\Models\Role::create(['name' => 'super_root']);
-        $permission = Permission::create(['name' => 'can_create_institution_account']);
+        $role = \Spatie\Permission\Models\Role::create(['name' => 'super-admin']);
+        $permission = Permission::make(['name' => 'create_institution_account']); $permission->saveOrFail();
         $role->givePermissionTo($permission);
         return 0;
     }
