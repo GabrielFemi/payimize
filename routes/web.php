@@ -3,6 +3,7 @@
 use App\Http\Controllers\InstitutionController;
 use App\Http\Controllers\TransactionController;
 use Illuminate\Support\Facades\Route;
+use Inertia\Inertia;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,4 +34,8 @@ Route::middleware(['guest'])->get('register-as-institution', function () {
     return Inertia\Inertia::render('Register-As-Institution');
 });
 
-Route::resource('/institutions', InstitutionController::class)->middleware(['role_or_permission:super_root|create_institution_account']);
+Route::resource('/institutions', InstitutionController::class);
+
+Route::get('onboarding', function () {
+    return Inertia::render('Onboarding');
+});
