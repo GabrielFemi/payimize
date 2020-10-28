@@ -41,4 +41,5 @@ Route::middleware(['auth:sanctum'])->get('onboarding', function () {
     return Inertia::render('Onboarding');
 })->name('onboarding');
 
-Route::middleware(['auth:sanctum, onboarded'])->post('/onboarding', FinishOnboarding::class);
+Route::middleware(['auth:sanctum, onboarded'])->post('/onboarding', FinishOnboarding::class)
+->name('finish_onboarding');

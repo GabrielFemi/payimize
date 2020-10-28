@@ -19,18 +19,18 @@
         </div>
         <div class="my-12 pb-12 w-full max-w-screen-md mx-auto">
             <h1 class="text-4xl font-bold text-center">Institution Details</h1>
-            <form class="mt-2 w-full">
+            <form class="mt-2 w-full" @submit.prevent="submit">
                 <div class=" my-6 grid grid-cols-1 gap-6 sm:mb-0 sm:gap-6 sm:grid-cols-2">
                     <div class="">
                         <label class="text-sm text-gray-600  false" for="firstName">Matric Number</label>
                         <div class="">
-                            <input type="text" name="matric_number" class=" w-full border border-gray-300 rounded-sm px-4 py-3 outline-none transition-colors duration-150 ease-in-out focus:border-blue-400 " placeholder="" value="">
+                            <input v-model="form.matric_number" type="text" name="matric_number" class=" w-full border border-gray-300 rounded-sm px-4 py-3 outline-none transition-colors duration-150 ease-in-out focus:border-blue-400 " placeholder="" value="">
                         </div>
                     </div>
                     <div class="">
                         <label class="text-sm text-gray-600  false" for="lastName">Level</label>
                         <div class="">
-                            <input type="number" name="level" class=" w-full border border-gray-300 rounded-sm px-4 py-3 outline-none transition-colors duration-150 ease-in-out focus:border-blue-400 " placeholder="" value="">
+                            <input v-model="form.level" type="number" name="level" class=" w-full border border-gray-300 rounded-sm px-4 py-3 outline-none transition-colors duration-150 ease-in-out focus:border-blue-400 " placeholder="" value="">
                         </div>
                     </div>
                 </div>
@@ -39,7 +39,7 @@
                     <div class="">
                         <label class="text-sm text-gray-600  false" for="">Access code.</label>
                         <div class="">
-                            <input type="text" name="access_code" class=" w-full border text-center border-gray-300 rounded-sm px-4 py-3 outline-none transition-colors duration-150 ease-in-out focus:border-blue-400 " placeholder="Enter the access code for your school." value="">
+                            <input v-model="form.access_code" type="text" name="access_code" class=" w-full border text-center border-gray-300 rounded-sm px-4 py-3 outline-none transition-colors duration-150 ease-in-out focus:border-blue-400 " placeholder="Enter the access code for your school." value="">
                         </div>
                     </div>
                 </div>
@@ -55,6 +55,20 @@
 
 <script>
 export default {
+    data()  {
+        return {
+            form: {
+                matric_number: null,
+                level: null,
+                access_code: null,
+            },
+            }
+        },
+    methods: {
+        submit() {
+            this.$inertia.post(route('finish_onboarding'), this.form)
+        }
+    },
     name: "Onboarding"
 }
 </script>

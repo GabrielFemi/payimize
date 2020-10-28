@@ -3601,6 +3601,20 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      form: {
+        matric_number: null,
+        level: null,
+        access_code: null
+      }
+    };
+  },
+  methods: {
+    submit: function submit() {
+      this.$inertia.post(route('finish_onboarding'), this.form);
+    }
+  },
   name: "Onboarding"
 });
 
@@ -27368,94 +27382,28 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container mx-auto" }, [
-      _c(
-        "div",
-        { staticClass: "w-full flex justify-between item-center py-6" },
-        [
-          _c("div", { staticClass: "h-8" }, [
-            _c("img", {
-              staticClass: "h-full",
-              attrs: { src: "https://gustui.s3.amazonaws.com/gustlogo.png" }
-            })
-          ]),
-          _c(
-            "a",
-            {
-              staticClass: "no-underline font-medium text-blue-400",
-              attrs: { href: "#" }
-            },
-            [_vm._v("Get Help")]
-          )
-        ]
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "mt-8" }, [
-        _c("div", { staticClass: " w-full px-4 sm:px-8" }, [
-          _c("div", { staticClass: "h-2px w-full bg-gray-300 relative" }, [
-            _c(
-              "div",
-              {
-                staticClass:
-                  "absolute top-1/2 left-0 h-1 transform -translate-y-1/2 bg-blue-400 transition-width ease-in-out duration-500",
-                staticStyle: { width: "33.3333%" }
-              },
-              [
-                _c("div", {
-                  staticClass:
-                    "w-3 h-3 bg-blue-800 rounded-full absolute right-0 top-1/2 transform translate-x-1/2 -translate-y-1/2"
-                })
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "mt-3 relative hidden sm:block" }, [
-            _c(
-              "div",
-              { staticClass: "absolute", staticStyle: { left: "0%" } },
-              [
-                _c(
-                  "span",
-                  {
-                    staticClass:
-                      "inline-block transform -translate-x-1/2 text-sm font-medium text-blue-400"
-                  },
-                  [_vm._v("Registration")]
-                )
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "absolute", staticStyle: { left: "33.3333%" } },
-              [
-                _c(
-                  "span",
-                  {
-                    staticClass:
-                      "inline-block transform -translate-x-1/2 text-sm font-medium"
-                  },
-                  [_vm._v("Institution Details")]
-                )
-              ]
-            )
-          ])
-        ])
+  return _c("div", { staticClass: "container mx-auto" }, [
+    _vm._m(0),
+    _vm._v(" "),
+    _vm._m(1),
+    _vm._v(" "),
+    _c("div", { staticClass: "my-12 pb-12 w-full max-w-screen-md mx-auto" }, [
+      _c("h1", { staticClass: "text-4xl font-bold text-center" }, [
+        _vm._v("Institution Details")
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "my-12 pb-12 w-full max-w-screen-md mx-auto" }, [
-        _c("h1", { staticClass: "text-4xl font-bold text-center" }, [
-          _vm._v("Institution Details")
-        ]),
-        _vm._v(" "),
-        _c("form", { staticClass: "mt-2 w-full" }, [
+      _c(
+        "form",
+        {
+          staticClass: "mt-2 w-full",
+          on: {
+            submit: function($event) {
+              $event.preventDefault()
+              return _vm.submit($event)
+            }
+          }
+        },
+        [
           _c(
             "div",
             {
@@ -27475,6 +27423,14 @@ var staticRenderFns = [
                 _vm._v(" "),
                 _c("div", {}, [
                   _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.form.matric_number,
+                        expression: "form.matric_number"
+                      }
+                    ],
                     staticClass:
                       " w-full border border-gray-300 rounded-sm px-4 py-3 outline-none transition-colors duration-150 ease-in-out focus:border-blue-400 ",
                     attrs: {
@@ -27482,6 +27438,15 @@ var staticRenderFns = [
                       name: "matric_number",
                       placeholder: "",
                       value: ""
+                    },
+                    domProps: { value: _vm.form.matric_number },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(_vm.form, "matric_number", $event.target.value)
+                      }
                     }
                   })
                 ])
@@ -27499,6 +27464,14 @@ var staticRenderFns = [
                 _vm._v(" "),
                 _c("div", {}, [
                   _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.form.level,
+                        expression: "form.level"
+                      }
+                    ],
                     staticClass:
                       " w-full border border-gray-300 rounded-sm px-4 py-3 outline-none transition-colors duration-150 ease-in-out focus:border-blue-400 ",
                     attrs: {
@@ -27506,6 +27479,15 @@ var staticRenderFns = [
                       name: "level",
                       placeholder: "",
                       value: ""
+                    },
+                    domProps: { value: _vm.form.level },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(_vm.form, "level", $event.target.value)
+                      }
                     }
                   })
                 ])
@@ -27526,6 +27508,14 @@ var staticRenderFns = [
               _vm._v(" "),
               _c("div", {}, [
                 _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.form.access_code,
+                      expression: "form.access_code"
+                    }
+                  ],
                   staticClass:
                     " w-full border text-center border-gray-300 rounded-sm px-4 py-3 outline-none transition-colors duration-150 ease-in-out focus:border-blue-400 ",
                   attrs: {
@@ -27533,25 +27523,120 @@ var staticRenderFns = [
                     name: "access_code",
                     placeholder: "Enter the access code for your school.",
                     value: ""
+                  },
+                  domProps: { value: _vm.form.access_code },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.form, "access_code", $event.target.value)
+                    }
                   }
                 })
               ])
             ])
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: " my-6" }, [
+          _vm._m(2)
+        ]
+      )
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "w-full flex justify-between item-center py-6" },
+      [
+        _c("div", { staticClass: "h-8" }, [
+          _c("img", {
+            staticClass: "h-full",
+            attrs: { src: "https://gustui.s3.amazonaws.com/gustlogo.png" }
+          })
+        ]),
+        _c(
+          "a",
+          {
+            staticClass: "no-underline font-medium text-blue-400",
+            attrs: { href: "#" }
+          },
+          [_vm._v("Get Help")]
+        )
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "mt-8" }, [
+      _c("div", { staticClass: " w-full px-4 sm:px-8" }, [
+        _c("div", { staticClass: "h-2px w-full bg-gray-300 relative" }, [
+          _c(
+            "div",
+            {
+              staticClass:
+                "absolute top-1/2 left-0 h-1 transform -translate-y-1/2 bg-blue-400 transition-width ease-in-out duration-500",
+              staticStyle: { width: "33.3333%" }
+            },
+            [
+              _c("div", {
+                staticClass:
+                  "w-3 h-3 bg-blue-800 rounded-full absolute right-0 top-1/2 transform translate-x-1/2 -translate-y-1/2"
+              })
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "mt-3 relative hidden sm:block" }, [
+          _c("div", { staticClass: "absolute", staticStyle: { left: "0%" } }, [
             _c(
-              "button",
+              "span",
               {
                 staticClass:
-                  " inline-block rounded-sm font-medium border border-solid cursor-pointer text-center text-base py-3 px-6 text-white bg-blue-400 border-blue-400 hover:bg-blue-600 hover:border-blue-600 w-full",
-                attrs: { type: "submit" }
+                  "inline-block transform -translate-x-1/2 text-sm font-medium text-blue-400"
               },
-              [_vm._v("Finish")]
+              [_vm._v("Registration")]
             )
-          ])
+          ]),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "absolute", staticStyle: { left: "33.3333%" } },
+            [
+              _c(
+                "span",
+                {
+                  staticClass:
+                    "inline-block transform -translate-x-1/2 text-sm font-medium"
+                },
+                [_vm._v("Institution Details")]
+              )
+            ]
+          )
         ])
       ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: " my-6" }, [
+      _c(
+        "button",
+        {
+          staticClass:
+            " inline-block rounded-sm font-medium border border-solid cursor-pointer text-center text-base py-3 px-6 text-white bg-blue-400 border-blue-400 hover:bg-blue-600 hover:border-blue-600 w-full",
+          attrs: { type: "submit" }
+        },
+        [_vm._v("Finish")]
+      )
     ])
   }
 ]
