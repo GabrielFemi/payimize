@@ -37,7 +37,7 @@ Route::middleware(['guest'])->get('register-as-institution', function () {
 
 Route::resource('/institutions', InstitutionController::class);
 
-Route::middleware(['auth:sanctum'])->get('onboarding', function () {
+Route::middleware(['auth:sanctum', 'has_not_onboarded'])->get('onboarding', function () {
     return Inertia::render('Onboarding');
 })->name('onboarding');
 
