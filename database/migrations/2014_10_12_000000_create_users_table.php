@@ -19,6 +19,9 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->string('matric_number')->nullable();
+            $table->integer('level')->nullable();
+            $table->string('access_code')->nullable();
             $table->boolean('onboarded')->default(false);
             $table->rememberToken();
             $table->foreignId('current_team_id')->nullable();
