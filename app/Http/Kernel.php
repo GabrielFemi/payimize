@@ -2,6 +2,7 @@
 
 namespace App\Http;
 
+use App\Http\Middleware\HasNotOnboarded;
 use App\Http\Middleware\Onboarded;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 use Spatie\Permission\Middlewares\PermissionMiddleware;
@@ -70,5 +71,6 @@ class Kernel extends HttpKernel
         'permission' => PermissionMiddleware::class,
         'role_or_permission' => RoleOrPermissionMiddleware::class,
         'onboarded' => Onboarded::class,
+        'has_not_onboarded' => HasNotOnboarded::class,
     ];
 }

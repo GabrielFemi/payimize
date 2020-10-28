@@ -1,5 +1,6 @@
 <?php
 
+use App\Actions\FinishOnboarding;
 use App\Http\Controllers\InstitutionController;
 use App\Http\Controllers\TransactionController;
 use Illuminate\Support\Facades\Route;
@@ -36,6 +37,9 @@ Route::middleware(['guest'])->get('register-as-institution', function () {
 
 Route::resource('/institutions', InstitutionController::class);
 
-Route::middleware(['auth:sanctum'])->get('onboarding', function () {
+Route::middleware(['auth:sanctum', 'has_not_onboarded'])->get('onboarding', function () {
     return Inertia::render('Onboarding');
 })->name('onboarding');
+
+Route::middleware(['auth:sanctum, onboarded'])->post('/onboarding', FinishOnboarding::class)
+->name('finish_onboarding');
