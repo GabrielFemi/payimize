@@ -1,5 +1,6 @@
 <?php
 
+use App\Actions\FinishOnboarding;
 use App\Http\Controllers\InstitutionController;
 use App\Http\Controllers\TransactionController;
 use Illuminate\Support\Facades\Route;
@@ -39,3 +40,5 @@ Route::resource('/institutions', InstitutionController::class);
 Route::middleware(['auth:sanctum'])->get('onboarding', function () {
     return Inertia::render('Onboarding');
 })->name('onboarding');
+
+Route::middleware(['auth:sanctum, onboarded'])->post('/onboarding', FinishOnboarding::class);
