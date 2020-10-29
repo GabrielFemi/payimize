@@ -27,7 +27,7 @@ class OnboardingRouteTest extends TestCase
     public function onlyOnboardedUsersCanViewDashboard() : void
     {
         $this->withoutMiddleware(['auth:santum']);
-        
+
         $response = $this->get('/dashboard');
         $response->assertStatus(302);
     }
