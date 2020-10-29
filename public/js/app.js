@@ -4495,6 +4495,18 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Create",
@@ -29087,37 +29099,101 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    [
-      _c("Alert", { attrs: { message: _vm.message } }),
-      _vm._v(" "),
-      _c("div", { staticClass: "bg-orange-300 p-20" }, [
-        _c(
-          "div",
-          {
-            staticClass:
-              "bg-white shadow-lg p-5 rounded hover:bg-gray-200 cursor-pointer text-center"
-          },
-          [
-            _c(
-              "inertia-link",
-              {
-                staticClass:
-                  "font-bold mb-2 text-center text-4xl text-gray-800 hover:text-black",
-                attrs: { href: "/transactions/school-fees-and-accommodation" }
-              },
-              [_vm._v("School fees and accomodation")]
-            )
-          ],
-          1
-        )
-      ])
-    ],
-    1
-  )
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c(
+        "section",
+        { staticClass: "bg-gray-100 bg-opacity-25 md:bg-opacity-75 py-20" },
+        [
+          _c(
+            "div",
+            { staticClass: "container mx-auto text-left md:text-center px-4" },
+            [
+              _c(
+                "h1",
+                {
+                  staticClass:
+                    "text-5xl text-gray-900 leading-tight mb-2 font-bold md:font-extrabold"
+                },
+                [_vm._v("Institutions")]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "card card-body px-0 md:px-4 shadow-none md:shadow-xl py-20 bg-transparent md:bg-white"
+                },
+                [
+                  _c("div", { staticClass: "w-full md:w-3/5 mx-auto" }, [
+                    _c(
+                      "h1",
+                      {
+                        staticClass:
+                          "text-5xl text-gray-900 leading-tight mb-2 font-bold md:font-extrabold"
+                      },
+                      [
+                        _c(
+                          "span",
+                          { staticClass: "text-gray-600 text-2xl font-medium" },
+                          [_vm._v("Anchor University, Lagos")]
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "p",
+                      { staticClass: "text-lg md:text-xl text-gray-600 mb-6" },
+                      [
+                        _vm._v(
+                          "\n                        Located at 1-4, Ayobo road, We are a school determined to achieve excellence in every sphere.\n                    "
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "block md:flex justify-center space-x-0 md:space-x-2 space-y-2 md:space-y-0"
+                      },
+                      [
+                        _c(
+                          "a",
+                          {
+                            staticClass: "btn btn-dark btn-xl w-full md:w-auto",
+                            attrs: { href: "#" }
+                          },
+                          [_vm._v("View portal")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "a",
+                          {
+                            staticClass:
+                              "btn btn-light btn-xl w-full md:w-auto",
+                            attrs: { href: "#" }
+                          },
+                          [_vm._v("Contact Us")]
+                        )
+                      ]
+                    )
+                  ])
+                ]
+              )
+            ]
+          )
+        ]
+      )
+    ])
+  }
+]
 render._withStripped = true
 
 
