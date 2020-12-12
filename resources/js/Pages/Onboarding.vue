@@ -30,7 +30,7 @@
                     <div class="">
                         <label class="text-sm text-gray-600  false" for="lastName">Level</label>
                         <div class="">
-                            <input v-model="form.level" type="number" name="level" class=" w-full border border-gray-300 rounded-sm px-4 py-3 outline-none transition-colors duration-150 ease-in-out focus:border-blue-400 " placeholder="" value="">
+                            <input v-model="form.level" maxlength="3" type="text" pattern="\d*" name="level" class=" w-full border border-gray-300 rounded-sm px-4 py-3 outline-none transition-colors duration-150 ease-in-out focus:border-blue-400 " placeholder="" value="">
                         </div>
                     </div>
                 </div>

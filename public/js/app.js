@@ -27487,7 +27487,9 @@ var render = function() {
                     staticClass:
                       " w-full border border-gray-300 rounded-sm px-4 py-3 outline-none transition-colors duration-150 ease-in-out focus:border-blue-400 ",
                     attrs: {
-                      type: "number",
+                      maxlength: "3",
+                      type: "text",
+                      pattern: "\\d*",
                       name: "level",
                       placeholder: "",
                       value: ""
@@ -45026,8 +45028,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/gabriela/Company/payimize/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/gabriela/Company/payimize/resources/css/app.css */"./resources/css/app.css");
+__webpack_require__(/*! /Users/gabrielakinyosoye/dev/personal/payimize/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/gabrielakinyosoye/dev/personal/payimize/resources/css/app.css */"./resources/css/app.css");
 
 
 /***/ })
